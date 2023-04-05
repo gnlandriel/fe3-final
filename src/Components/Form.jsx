@@ -37,11 +37,12 @@ const Form = () => {
     <div>
       <form onSubmit={onSubmitForm}>
         <input type = "text" placeholder="Ingrese su nombre" onChange={onChangeName} value={name}/>
-        <input type = "email" placeholder="Ingrese su email" onChange={onChangeEmail} value={email}/>
+        <input type = "email" placeholder="Ingrese su email" onChange={onChangeEmail} value={email}/>        
         <button>Enviar</button>
       </form>
       {message ? <div>Gracias {name} , te contactaremos cuanto antes vía mail</div> : <div>Por favor verifique su información nuevamente </div>}
     </div>
+    
   );
 };
 
